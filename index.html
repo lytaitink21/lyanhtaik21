@@ -1,0 +1,185 @@
+<html>
+<head>
+<title> mua ban dien thoai di dong </title>
+<style>
+
+.slideshow{
+    width:800px;
+	height:100px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.duongvien{
+    width:3200px;
+	-webkit-animation:slide 8s ease infinite;
+}
+.slide{
+    float:left;
+	width:800px;
+	height:100px;
+	display:flex;
+}
+@-webkit-keyframes slide{
+    20%{margin-left:0px;}
+	40%{margin-left:-800px;}
+	60%{margin-left:-1600px;}
+	
+}
+
+
+
+.menu {
+    background:blue;
+}
+.menu ul{
+    list-style:none;
+	padding:0 15px;
+}
+.menu ul li{
+    position:relative;
+}
+.menu ul li a{
+    color:#EDEDED;
+	text-decoration:none;
+}
+.menu > ul > li{
+     display: inline-block;
+}
+.menu > ul > li > a{
+     display:block;
+	 line-height:40px;
+	 padding:0 15px;
+}
+.menu ul ul{
+    width:220px;
+	position:absolute;
+	visibility:hidden;
+}
+.menu ul ul li{
+     line-height:40px;
+	 background:black;
+	 padding: 0 15px;
+	 left: -15px;
+}
+.menu ul ul li:hover{
+     background:#121212;
+}
+.menu ul li:hover > ul{
+     visibility:visible;
+	 top:100%
+}
+.menu ul ul ul {
+    top: 0 !important;
+	left:100%;
+}
+</style>
+
+</head>
+<body>
+<form name="muadt" method="post">
+<table border="1">
+
+<tr align="center">
+<td colspan="2" height="500" width="1350">
+
+<img src="fpt.jpg" height="500" width="1350">
+
+</td>
+</tr> 
+
+<tr align="center" valign="top" >
+<td colspan="2" height="80" width="2000">
+
+<div class ="menu">
+     <ul>
+	   <li><a href="#">menu gom</a>
+	       <ul>
+			  <li><a href="#">mua dien thoai</a></li>
+	          <li><a href="#">ban dien thoai </a></li>
+			  <li><a href="#">thu dien thoai </a></li>
+			</ul>
+	   
+	   </li>
+	   <li><a href="#">trang chu</a>
+	        <ul>
+			  <li><a href="#">san pham </a></li>
+	          <li><a href="#">danh gia</a></li>
+			  <li><a href="#">thu nghiem</a></li>
+			</ul>
+	   
+	   </li>
+	   <li><a href="#">laptop</a>
+	        <ul>
+			  <li><a href="#">vaio</a></li>
+	          <li><a href="#">dell</a></li>
+			  <li><a href='#'>asus</a></li>
+             </ul>
+		 </li>
+
+	   <li><a href="#">phu kien</a>
+	        <ul>
+			  <li><a href="#">op lung</a></li>
+	          <li><a href="#">tai nghe</a></li>
+			  <li><a href="#">sac pin dien thoai</a></li>
+			 </ul>
+	   </li>
+	   
+	   <li><a href="#">dienthoai</a>
+	        <ul>
+			  <li><a href="#">apple</a></li>
+	          <li><a href="#">samsung</a>
+			     <ul>
+			        <li><a href="#">s21 5g</a></li>
+	                <li><a href="#">z flip3</a></li>
+			        <li><a href="#">galaxy a3</a></li>
+			        </ul>
+			  </li>
+			  <li><a href="#">vivo</a></li>
+			</ul>
+	   </li>
+	 </ul>
+</div>
+
+</td>
+</tr>
+
+ 
+  <tr align="center">
+<td colspan="2" height="100" width="1350">
+
+<div class="slideshow">
+  <div class="duongvien">
+   <div class="slide"><img src="i1.png" height="100" width="1350"></div>
+   <div class="slide"><img src="i2.png" height="100" width="1350"></div>
+   <div class="slide"><img src="i3.jpg" height="100" width="1350"></div>
+  </div>
+</div>
+
+</td>
+</tr>
+
+<tr>
+<td rowspan=2>
+<h2>dang khi mua dien thoai</h2>
+
+ho ten <input type="text" name="hoten" id=""><br><br>
+so cccd <input type="text" name="so cccd" id=""><br><br>
+loai <input type="radio" name="loai" value="256gb">256gb
+     <input type="radio" name="loai" value="256gb">512gb
+	 <br><br>
+lua chon <input type="checkbox" name="lua chon" value="giao hang"> giao hang
+          <input type="checkbox" name="lua chon" value="phu kien"> phu kien
+		  <input type="checkbox" name="lua chon" value="hoa don"> hoa don
+     <br><br>
+<input type="button" value="dat hang">
+</td>
+<td> <img src="256gb.jpg" height="200" width="200"></td>
+</tr>
+<tr>
+<td><img src="512gb.jpg" height="200" width="200"></td>
+</tr>
+
+</table>
+</form>
+</body>
+</html>
